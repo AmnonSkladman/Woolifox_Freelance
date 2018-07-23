@@ -1,0 +1,456 @@
+/*
+    NOTE ABOUT BODY * TRANSITIONS:
+    If using Lightbox or any similar
+    plugins, please disable Body * Transitions.
+    Otherwise, you'll get some weird
+    graphical glitching. You've been warned.
+*/
+
+/*
+///////////////////////////////
+//////// General //////////////
+///////////////////////////////
+*/
+
+body * {
+/*
+    transition: ease-in-out 0.25s;
+    -moz-transition: ease-in-out 0.25s;
+    -o-transition: ease-in-out 0.25s;
+    -webkit-transition: ease-in-out 0.25s;
+*/
+}
+
+::selection {
+    background: #7ca12d;
+    color: #ffffff;
+}
+
+::-moz-selection {
+    background: #7ca12d;
+    color: #ffffff;
+}
+
+body {
+    margin: 0em;
+    font-size: 10px;
+    background-color: #ffffff;
+}
+
+nav {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    margin: 0em;
+    width: 100%;
+    font-family: 'Merriweather', serif;
+    font-variant: small-caps;
+}
+
+nav ul {
+    list-style: none;
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 0.75em;
+    color: #405b08;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 1.5em;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    color: #000000;
+    padding-top: 0.35em;
+    font-weight: normal;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    color: #000000;
+}
+
+footer {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+footer img {
+    width: 5%;
+    height: auto;
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Merriweather', serif;
+    font-size: 1em;
+    color: #405b08;
+}
+
+form {
+    width: 100%;
+}
+
+input {
+    width: 96.5%;
+    height: 1.5em;
+    background: #e1e9d4;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+textarea {
+    width: 100%;
+    height: 1.5em;
+    background: #e1e9d4;
+    color: #000000;
+    font-family: 'Roboto', sans-serif;
+    border: none;
+    font-size: 1.3em;
+    padding: 0.5em;
+}
+
+/*
+///////////////////////////////
+//////// Classes //////////////
+///////////////////////////////
+*/
+
+.social {
+    width: 7%;
+}
+
+.navLine {
+    display: none;
+    visibility: hidden;
+}
+
+.portfolio {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+	padding-bottom: 20px;
+    justify-content: center;
+}
+
+.portHeader {
+    width: 55.75%;
+}
+
+/*
+///////////////////////////////
+//////// IDs //////////////////
+///////////////////////////////
+*/
+
+#banner {
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    align-content: center;
+}
+#bannerImage {
+    width: 100%;
+    height: 100%;
+}
+
+#subBanner {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+#subBanner img {
+    width: 80%;
+    height: 80%;
+}
+
+#flexContainer {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+#updates {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    margin: 10%;
+}
+
+#updatesHeader {
+/*    position: absolute;*/
+}
+
+#updatesContainer {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    flex-direction: row;
+}
+
+#updatesDate {
+    display: inline-block;
+    width: 25%;
+    height: auto;
+}
+
+#updatesContent {
+    display: inline-block;
+    width: 75%;
+    height: auto;
+}
+
+#works {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    padding: 5%;
+    margin: 10%;
+}
+
+#works img {
+    width: 100%;
+    height: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+#social {
+    display: flex;
+    -moz-display: flex;
+    -webkit-display: flex;
+    -o-display: flex;
+    width: 100%;
+    height: auto;
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+}
+
+#social ul {
+    list-style: none;
+    -webkit-padding-start: 0px;
+    -moz-padding-start: 0px;
+    text-align: center;
+}
+
+#social li {
+    display: inline;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#social a {
+    padding: 0em;
+    margin: 0em;
+}
+
+#about {
+    padding: 10%;
+}
+
+#aboutImg1 {
+    float: left;
+    width: 40%;
+    height: auto;
+    margin: 0% 1% 0% 0%;
+}
+
+#aboutImg2 {
+    float: right;
+    width: auto;
+    height: auto;
+    margin: 0% 0% 0% 1%;
+}
+
+#aboutP1 {
+    margin-top: 0%;
+}
+
+#photoSpan {
+	padding:10px;
+}
+
+#contact {
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+
+#formMessage {
+    overflow: auto;
+    resize: none;
+}
+
+#submit {
+    height: 2em;
+    width: 100%;
+}
+
+/*
+///////////////////////////////
+//////// Media Queries ////////
+///////////////////////////////
+*/
+
+@media all and (min-width: 330px) {
+    .navLine {
+        display: inline-block;
+        visibility: visible;
+        width: 2.5%;
+        height: 1px;
+    }
+}
+
+@media all and (min-width:1000px) {
+    #flexContainer {
+        flex-direction: row;
+    }
+    p {
+        padding-right: 3em;
+        font-size: 1.6em;
+    }
+    nav a:visited {
+        color: #405b08;
+    }
+    nav a:hover {
+        color: #7ca12d;
+        transition: ease-in-out 0.25s;
+        -moz-transition: ease-in-out 0.25s;
+        -o-transition: ease-in-out 0.25s;
+        -webkit-transition: ease-in-out 0.25s;
+    }
+    nav a:active {
+        color: #405b08;
+    }
+    footer a:visited {
+        color: #405b08;
+    }
+    footer a:hover {
+        color: #7ca12d;
+        transition: ease-in-out 0.25s;
+        -moz-transition: ease-in-out 0.25s;
+        -o-transition: ease-in-out 0.25s;
+        -webkit-transition: ease-in-out 0.25s;
+    }
+    footer a:active {
+        color: #405b08;
+    }
+    h2 {
+        font-family: 'Merriweather';
+        font-size: 1.5em;
+        color: #000000;
+        padding-top: 0.35em;
+        font-weight: normal;
+    }
+    #updates {
+        width: 75%;
+        height: auto;
+        padding-left: 10%;
+        padding-right: 0%;
+        margin: 0%;
+    }
+    #updatesContainer {
+        display: flex;
+        -moz-display: flex;
+        -webkit-display: flex;
+        -o-display: flex;
+        flex-direction: row;
+    }
+    #updatesDate {
+        display: inline-block;
+        width: 25%;
+        height: auto;
+    }
+    #updatesContent {
+        display: inline-block;
+        width: 75%;
+        height: auto;
+    }
+    #works {
+        width: 25%;
+        padding-right: 10%;
+        padding-left: 0%;
+        margin: 0%;
+    }
+    .social {
+        filter:grayscale(100%);
+        -webkit-filter: grayscale(100%);
+    }
+    .social:hover {
+        filter:grayscale(0%);
+        -webkit-filter: grayscale(0%);
+        transition: ease-in-out 0.25s;
+        -moz-transition: ease-in-out 0.25s;
+        -o-transition: ease-in-out 0.25s;
+        -webkit-transition: ease-in-out 0.25s;
+    }
+    #aboutImg1{
+        width: 30%;
+    }
+    #contact {
+        width: 20%;
+    }
+}
+
+@media all and (min-width: 1250px) {
+    .navLine {
+        width: 19.75%;
+        height: 1px;
+    }
+    #aboutImg1 {
+        width: 20%;
+    }
+}
+
+@media all and (min-width: 1510px) {
+    .navLine {
+        width: 32.5%;
+        height: 1px;
+    }
+}
